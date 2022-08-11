@@ -1,0 +1,112 @@
+header {
+    padding: 3.3em 0 0 0;
+    background-image: url(../img/promo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 102% 101%;
+    .top-line {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .logo {
+            left: 35.3em;
+            display: inline-block;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .main-nav {
+            display: inline-flex;
+            align-items: center;
+            left: 42.3em;
+            top: auto;
+            .nav-link {
+                text-decoration: none;
+                color: inherit;
+                font-size: 1.6em;
+                font-weight: normal;
+                margin: 0 1.5em 0 0;
+                letter-spacing: 0.035em;
+                &:hover {
+                    color: $accent;
+                }
+            }
+        }
+        .contacts {
+            left: 49.8em;
+            width: 17.2em;
+            top: -0.2em;
+            background: #104c65;
+            border-radius: 10em;
+            cursor: pointer;
+            .phone {
+                width: 100%;
+                height: 100%;
+                background-image: url(../img/icon-phone.svg);
+                background-position: 0.7em 0.73em;
+                background-repeat: no-repeat;
+                background-size: 13%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 1em 1.1em 0.8em;
+
+                .phone-link {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 1.6em;
+                    font-weight: bold;
+                    letter-spacing: 0.01em;
+                }
+            }
+
+            &:hover {
+                background: $accent;
+            }
+        }
+    }
+
+    .promo {
+        height: 62.2em;
+        .offer {
+            font-size: 8.6em;
+            font-weight: 900;
+            top: 0.825em;
+            left: 4.07em;
+            letter-spacing: -0.03em;
+            width: 7.4em;
+            line-height: 0.95;
+        }
+        .suboffer {
+            font-size: 2.8em;
+            color: inherit;
+            font-weight: bold;
+            left: 12.6em;
+            top: 3.66em;
+            width: 15.2em;
+            line-height: 1.125;
+        }
+
+        .btn {
+            font-size: 2em;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.7em 1.55em;
+            top: 8.7em;
+            left: 17.8em;
+            border-radius: 10em;
+        }
+        .btn--green {
+            color: #fff;
+            background: $green;
+        }
+        .js-callback {
+            cursor: pointer;
+        }
+    }
+}

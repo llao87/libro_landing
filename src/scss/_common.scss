@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    outline: none;
+    font-family: "Circe", sans-serif;
+    transition: all 0.3s linear;
+}
+
+html {
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    // font-size: 0.92593vh;
+    // font-size: 1.065vh;
+    font-size: 0.5215vw; 
+    color: $text;
+}
+
+.container {
+
+    .strong {
+        font-weight: bold;
+    }
+}
+
+.btn {
+}
+.btn--green {
+}

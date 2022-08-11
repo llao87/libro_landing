@@ -1,0 +1,192 @@
+.advantages {
+    height: 57.2em;
+    width: 100%;
+    background-image: url(/img/bg-advantages.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    .container {
+        width: 125em;
+        left: 55.3em;
+        height: 100%;
+        .why {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            top: 16.4em;
+            left: 0.2em;
+            .title {
+                font-size: 4.2em;
+                color: #3799c3;
+                font-weight: 900;
+                width: 8em;
+                line-height: 0.9;
+                .company-name {
+                    display: block;
+                    margin: 0.25em 0 0 0;
+                }
+            }
+            .description {
+                font-size: 2em;
+                top: 2.3em;
+                left: 0.1em;
+                width: 11em;
+                line-height: 1.245;
+                color: #fff;
+                span.strong {
+                }
+            }
+        }
+
+        .advantages-list {
+            left: 45em;
+            // width: 73em;
+            width: auto;
+            top: -7.3em;
+            display: flex;
+            align-items: stretch;
+            .advantage {
+                display: inline-block;
+                width: 18em;
+                .icon {
+                    .icon-img {
+                        width: 16em;
+                    }
+                }
+                .description {
+                    font-size: 2em;
+                    color: #fff;
+                    top: 1.25em;
+                    text-align: center;
+                    line-height: 1.225;
+                    span.strong {
+                    }
+                }
+            }
+            .advantage.advantage--teacher {
+                margin: 0 10.7em 0 0;
+
+                .icon {
+                    .icon-img {
+                    }
+                }
+                .description {
+                    span.strong {
+                    }
+                }
+            }
+
+            .advantage.advantage--tech {
+                margin: 0 8.5em 0 0;
+                .icon {
+                    .icon-img {
+                    }
+                }
+                .description {
+                    left: -0.5em;
+                    span.strong {
+                    }
+                }
+            }
+
+            .advantage.advantage--cert {
+                .icon {
+                    .icon-img {
+                    }
+                }
+                .description {
+                    left: -0.5em;
+                    span.strong {
+                    }
+                }
+            }
+        }
+    }
+}
+
+.exam-structure {
+    height: 42.3em;
+    .structure {
+        position: absolute;
+        display: block;
+        width: 22em;
+        left: 35.3em;
+        top: 8.9em;
+        .title {
+            color: $green;
+            font-size: 4.2em;
+            font-weight: 800;
+            line-height: 1;
+            margin: 0 0 0.8em 0;
+        }
+        .description {
+            font-size: 2em;
+            font-weight: normal;
+            line-height: 1.25;
+        }
+    }
+
+    .levels {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        width: auto;
+        position: absolute;
+        left: 78em;
+        top: 10em;
+        border-top: 0.3em solid;
+        .exam-level {
+            width: 30em;
+            padding: 3.5em 0 0 0;
+            flex: none;
+
+            .title {
+                font-size: 2em;
+                font-weight: bold;
+                color: $green;
+                margin: 0 0 0.3em 0;
+            }
+            .theme {
+                font-size: 2em;
+                font-weight: bold;
+                color: inherit;
+                margin: 0 0 0.3em 0;
+            }
+            .contain {
+                font-size: 2em;
+                font-weight: normal;
+                color: inherit;
+                line-height: 1.55;
+            }
+            &::before {
+                position: absolute;
+                display: block;
+                content: "";
+                background-color: #6ba671;
+                width: 1.8em;
+                height: 1.8em;
+                top: -1em;
+                left: 0;
+                border-radius: 3em;
+                z-index: 10;
+            }
+        }
+        .exam-level-1 {
+            width: 35.3em;
+            padding-right: 10em;
+
+            &::before {
+            }
+        }
+        .exam-level-2 {
+            width: 24.3em;
+            &::before {
+            }
+        }
+        .exam-level-3 {
+            &::before {
+            }
+        }
+    }
+}
