@@ -76,7 +76,8 @@
         .top-row 
             .title График работы
             .time 
-                .start 9:00  
+                .start 9:00
+                .defis 
                 .end 18:00  
 
         .bottom-row 
@@ -89,15 +90,25 @@
             .day.day-weekend вс
 
 .certificate 
-    .title Государственный сертификат
-    .info
-        .col.col-left 
-            .paragraph Выдаем сертификат гособразца о владении русским языком
-            .paragraph В сертификате указываются фамилия, имя, отчество тестируемого, дата рождения, паспортные данные в соответствии с официальным переводом  иностранного паспорта
-        .col.col-right 
-            .paragraph Внимательно проверяйте, верно ли указаны ваши данные при получении
-            .paragraph Срок действия сертификата — 5 лет с момента выдачи
-    img.cert(src="../../img/certificate.png" alt="certificate")
+    .container 
+        .info
+            .title Государственный<br>сертификат
+            .texts
+                .col.col-left 
+                    .paragraph Выдаем 
+                        span.strong сертификат гособразца
+                        |  о владении русским языком
+                    .paragraph В сертификате указываются фамилия, имя, отчество тестируемого, дата рождения, паспортные данные в соответствии с официальным переводом  
+                        span.strong  иностранного паспорта
+                .col.col-right 
+                    .paragraph Внимательно проверяйте, верно ли указаны 
+                        span.strong  ваши данные 
+                        |  при получении
+                    .paragraph Срок действия сертификата — 
+                        span.strong  5 лет
+                        |  с момента выдачи
+        .cert
+            img.cert-img(src="../../img/certificate.png" alt="certificate")
 
 
 .tests-examples
@@ -107,15 +118,16 @@
         .tests
             .test
                 img.test-img(src="../../img/demo-test-1.png")
-                .caption Для получения разрешения на работу или патента (уровень 1)
-        .tests
+                .caption Для получения разрешения на 
+                    span.strong работу или патента (уровень 1)
             .test
                 img.test-img(src="../../img/demo-test-1.png")
-                .caption Для получения разрешения на временное проживание (уровень 2)
-        .tests
+                .caption Для получения разрешения на 
+                    span.strong временное проживание (уровень 2)
             .test
                 img.test-img(src="../../img/demo-test-1.png")
-                .caption Для получения разрешения на вид на жительство (уровень 3)
+                .caption Для получения разрешения на 
+                    span.strong вид на жительство (уровень 3)
 
 .map-block 
     .map-wrap 

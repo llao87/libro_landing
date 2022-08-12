@@ -17,15 +17,13 @@ html {
 body {
     // font-size: 0.92593vh;
     // font-size: 1.065vh;
-    font-size: 0.5215vw; 
+    font-size: 0.5215vw;
     color: $text;
 }
 
-.container {
-
-    .strong {
-        font-weight: bold;
-    }
+.strong {
+    font-weight: bold;
+    display: inline-block;
 }
 
 .btn {
