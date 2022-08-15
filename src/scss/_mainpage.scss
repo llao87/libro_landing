@@ -316,16 +316,16 @@
                 color: $accent;
                 .start {
                     font-size: 8em;
-                    font-weight: normal;
+                    font-weight: bold;
                 }
                 .end {
                     font-size: 8em;
-                    font-weight: normal;
+                    font-weight: bold;
                 }
                 .defis {
                     display: block;
                     width: 8em;
-                    height: 1px;
+                    height: 0.4em;
                     background-color: $accent;
 
                     &::before {
@@ -376,29 +376,64 @@
             .day-work {
                 background-color: $accent;
 
-                &::after {
-                    position: absolute;
-                    display: block;
-                    width: 100%;
-                    content: "";
-                    height: 1px;
-                    background-color: $accent;
-                    top: 50%;
-                    left: 80%;
-                    z-index: -1;
-                }
-
-                &:last-child {
-                    display: none;
-
+                &:nth-child(1) {
                     &::after {
-                        display: none;
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        content: "";
+                        height: 0.1em;
+                        background-color: #3799c3;
+                        top: 50%;
+                        left: 80%;
+                        transform: translateY(-50%);
+                        z-index: -1;
                     }
                 }
-            }
-            .day.day-work {
-                &:last-of-type {
-                    display: none;
+                
+                &:nth-child(2) {
+                    &::after {
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        content: "";
+                        height: 0.1em;
+                        background-color: #3799c3;
+                        top: 50%;
+                        left: 80%;
+                        transform: translateY(-50%);
+                        z-index: -1;
+                    }
+                }
+
+                &:nth-child(3) {
+                    &::after {
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        content: "";
+                        height: 0.1em;
+                        background-color: #3799c3;
+                        top: 50%;
+                        left: 80%;
+                        transform: translateY(-50%);
+                        z-index: -1;
+                    }
+                }
+
+                &:nth-child(4) {
+                    &::after {
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        content: "";
+                        height: 0.1em;
+                        background-color: #3799c3;
+                        top: 50%;
+                        left: 80%;
+                        transform: translateY(-50%);
+                        z-index: -1;
+                    }
                 }
             }
             .day-weekend {
@@ -433,7 +468,7 @@
                     content: "";
                     width: 50vw;
                     height: 0.03em;
-                    background-color: #3799c3;
+                    background-color: $accent;
                     bottom: -0.05em;
                     left: 0;
                     z-index: 1;
@@ -483,7 +518,7 @@
 
 .tests-examples {
     .container {
-        padding: 6.5em 0;
+        padding: 6.5em 0 4em 0;
         max-width: 130em;
         margin: 0 auto;
         .title {
@@ -518,6 +553,71 @@
                     font-size: 2em;
                     text-align: center;
                 }
+            }
+        }
+    }
+}
+
+.map-block {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 76em;
+    overflow: hidden;
+    flex: none;
+
+    .map-wrap {
+        width: 139.8em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .map {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .registration {
+        flex: 1;
+        padding: 0 6.4em 0 8em;
+        background-color: #F4F4F4;
+        .form-registration {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 11.6em 0;
+            .title {
+                font-size: 6.8em;
+                font-weight: 800;
+                letter-spacing: -0.025em;
+                line-height: .94;
+                margin: 0 0 1em 0.25em;
+                color: $accent;
+            }
+
+            .field {
+                width: 100%;
+                margin: 0 0 1.6em 0;
+                .field-label {
+                    width: 100%;
+                    font-size: 2em;
+                    margin: 0 0 0 0.9em;
+                    color: $accent;
+                    input {
+                        width: 100%;
+                        font-size: 0.9em;
+                        margin: 0.2em 0 0 0;
+                        padding: 0.9em 1em;
+                        border: none;
+                        background-color: #fff;
+                        color: #f4f4f4;
+                    }
+                }
+            }
+
+            .submit {
+                margin: 3.2em 0 0 0.3em;
             }
         }
     }

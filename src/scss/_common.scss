@@ -27,6 +27,20 @@ body {
 }
 
 .btn {
+    font-size: 1.8em;
+    font-weight: 700;
+    border: 0.1em solid transparent;
+    border-radius: 10em;
+    padding: 0.6em 2.4em;
+    transition: all 0.3s linear;
+    cursor: pointer;
 }
-.btn--green {
+.btn-green {
+    color: #fff;
+    background-color: $green;
+    border: 0.1em solid $green;
+
+    &:hover {
+        background-color: #407045;
+    }
 }

@@ -1,5 +1,5 @@
 header {
-    padding: 3.3em 0 0 0;
+    padding: 2.1em 0 0 0;
     background-image: url(../img/promo.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -9,8 +9,8 @@ header {
         align-items: center;
         justify-content: flex-start;
         .logo {
-            width: 13.2em;
-            left: 35.3em;
+            width: 15.8em;
+            left: 34.1em;
             display: inline-block;
             cursor: pointer;
             text-decoration: none;
@@ -72,11 +72,12 @@ header {
     }
 
     .promo {
-        height: 62.4em;
+        // height: 62.4em;
+        height: 61em;
         .offer {
             font-size: 8.6em;
             font-weight: 900;
-            top: 0.825em;
+            top: 0.7em;
             left: 4.07em;
             letter-spacing: -0.03em;
             width: 7.4em;
@@ -88,7 +89,7 @@ header {
             color: inherit;
             font-weight: bold;
             left: 12.6em;
-            top: 3.66em;
+            top: 3.3em;
             width: 15.2em;
             line-height: 1.125;
         }
@@ -99,8 +100,8 @@ header {
             align-items: center;
             justify-content: center;
             padding: 0.7em 1.55em;
-            top: 8.7em;
-            left: 17.8em;
+            top: 8em;
+            left: 17.6em;
             border-radius: 10em;
         }
         .btn--green {

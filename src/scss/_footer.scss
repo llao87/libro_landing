@@ -1,0 +1,105 @@
+footer {
+    background-color: $text;
+    .container {
+        max-width: 130em;
+        margin: 0 auto;
+        padding: 4.2em 5.2em 5.2em;
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+        .logo-column {
+            width: 28em;
+            padding: 0.9em 0 0 0;
+            flex: none;
+
+            .logo {
+                margin: -1em 0 3em -1.4em;
+                width: 16.2em;
+                display: inline-block;
+                cursor: pointer;
+                text-decoration: none;
+                color: inherit;
+                .logo-img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .work-time {
+                font-size: 2em;
+                line-height: 1.2;
+                color: #fff;
+                padding: 0 2.4em 0 0;
+                font-weight: 300;
+            }
+        }
+        .addresses {
+            width: 62.3em;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex: none;
+            .address {
+                width: 50%;
+                font-size: 2em;
+                color: #fff;
+                padding: 0 0 2.4em .3em;
+
+                .phone {
+                    margin: 0.2em 0 0 0;
+                    display: block;
+                    width: 100%;
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+        .contacts {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            flex-direction: column;
+            flex: 1;
+            padding: 0 0 6.8em 3.2em;
+            .phone {
+                display: block;
+                width: 100%;
+                color: #fff;
+                font-size: 2em;
+                text-decoration: none;
+            }
+            .email {
+                display: block;
+                width: 100%;
+                color: #fff;
+                font-size: 2em;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .to-top {
+        position: fixed;
+        right: 9em;
+        font-size: 1.6em;
+        color: #fff;
+        bottom: 8.6em;
+        background-color: $accent;
+        width: 5em;
+        height: 5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10em;
+        z-index: 100;
+        padding: 0.2em 0 0 0;
+        cursor: pointer;
+        transition: all 0.3s linear;
+
+        &:hover {
+            background-color: #1585b5;
+        }
+    }
+    .js-to-top {}
+}

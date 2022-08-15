@@ -35,7 +35,7 @@
     .levels
         .exam-level.exam-level-1
             .title Модуль 1
-            .theme РУсский языкового
+            .theme Русский язык
             .contain Лексика. Грамматика (тест) Чтение (тест) Аудирование (тест) Письмо (1 задание) Устная речь (3-5 заданий)
         .exam-level.exam-level-2
             .title Модуль 2
@@ -131,16 +131,20 @@
 
 .map-block 
     .map-wrap 
+        iframe.map(src="https://yandex.ru/map-widget/v1/?um=constructor%3A0805b4b1f67b853eac30d5dbb9ca73794ef725399c09128ee5dabaae48160081&amp;source=constructor"
+            width="1280"
+            height="720"
+            frameborder="0")
     .registration
         form.form-registration 
             .title Записаться на экзамен
 
             label.field
                 span.field-label Ваше имя
-                input(type="text" placeholder="Введите имя")
+                    input(type="text" placeholder="Введите имя")
 
             label.field
                 span.field-label Номер телефона
-                input(type="text" placeholder="+7...")
+                    input(type="text" placeholder="+7...")
 
-            input.submit(type="submit" value="Записаться")
+            input.btn.btn-green.submit(type="submit" value="Записаться")
