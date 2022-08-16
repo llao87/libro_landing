@@ -1,9 +1,9 @@
 .advantages {
     height: 57.2em;
     width: 100%;
-    background-image: url(/img/bg-advantages.jpg);
+    background-image: url(../img/bg-advantages.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     .container {
         width: 125em;
@@ -15,10 +15,10 @@
             align-items: flex-start;
             justify-content: flex-start;
             top: 16.4em;
-            left: 0.2em;
+            left: -2.5em;
             .title {
                 font-size: 4.2em;
-                color: $accent;
+                color: #fff;
                 font-weight: 900;
                 width: 8em;
                 line-height: 0.9;
@@ -31,7 +31,7 @@
                 font-size: 2em;
                 top: 2.3em;
                 left: 0.1em;
-                width: 11em;
+                width: 13em;
                 line-height: 1.245;
                 color: #fff;
                 span.strong {
@@ -40,7 +40,7 @@
         }
 
         .advantages-list {
-            left: 45em;
+            left: 35em;
             // width: 73em;
             width: auto;
             top: -7.3em;
@@ -48,8 +48,9 @@
             align-items: stretch;
             .advantage {
                 display: inline-block;
-                width: 18em;
+                width: 24em;
                 .icon {
+                    text-align: center;
                     .icon-img {
                         width: 16em;
                     }
@@ -65,7 +66,8 @@
                 }
             }
             .advantage.advantage--teacher {
-                margin: 0 10.7em 0 0;
+                // margin: 0 10.7em 0 0;
+                margin: 0 5.5em 0 0;
 
                 .icon {
                     .icon-img {
@@ -78,13 +80,14 @@
             }
 
             .advantage.advantage--tech {
-                margin: 0 8.5em 0 0;
+                // margin: 0 8.5em 0 0;
+                margin: 0 5.5em 0 0;
                 .icon {
                     .icon-img {
                     }
                 }
                 .description {
-                    left: -0.5em;
+                    // left: -0.5em;
                     span.strong {
                     }
                 }
@@ -96,7 +99,7 @@
                     }
                 }
                 .description {
-                    left: -0.5em;
+                    // left: -0.5em;
                     span.strong {
                     }
                 }
@@ -134,11 +137,10 @@
         width: auto;
         position: absolute;
         left: 78em;
-        top: 10em;
-        border-top: 0.3em solid;
+        top: 13.2em;
         .exam-level {
             width: 30em;
-            padding: 3.5em 0 0 0;
+            padding: 0 0 4.5em 0;
             flex: none;
 
             .title {
@@ -161,31 +163,44 @@
             }
             &::before {
                 position: absolute;
-                display: block;
+                display: flex;
                 content: "";
                 background-color: #6ba671;
-                width: 1.8em;
-                height: 1.8em;
-                top: -1em;
+                width: 1.6em;
+                height: 1.6em;
+                bottom: -0.8em;
                 left: 0;
-                border-radius: 3em;
+                border-radius: 10em;
                 z-index: 10;
+                content: "1";
+                color: #fff;
+                align-items: center;
+                justify-content: center;
+                font-size: 4em;
+                font-weight: 900;
+                padding: 0.1em 0.05em 0 0;
+                box-sizing: border-box;
             }
         }
         .exam-level-1 {
             width: 35.3em;
             padding-right: 10em;
+            border-bottom: 0.3em solid $green;
 
             &::before {
+                content: "1";
             }
         }
         .exam-level-2 {
             width: 24.3em;
+            border-bottom: 0.3em solid $green;
             &::before {
+                content: "2";
             }
         }
         .exam-level-3 {
             &::before {
+                content: "3";
             }
         }
     }
@@ -438,6 +453,7 @@
             }
             .day-weekend {
                 background-color: $green;
+                opacity: 0.5;
             }
         }
     }
