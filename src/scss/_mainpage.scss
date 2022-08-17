@@ -6,26 +6,27 @@
     background-size: cover;
     background-position: center;
     .container {
-        width: 125em;
-        left: 55.3em;
+        width: 155em;
+        margin: 0 auto;
         height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 35em;
+        box-sizing: border-box;
         .why {
             display: inline-flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: flex-start;
-            top: 16.4em;
-            left: -2.5em;
+            top: -3em;
+            width: 25%;
             .title {
                 font-size: 4.2em;
                 color: #fff;
                 font-weight: 900;
                 width: 8em;
-                line-height: 0.9;
-                .company-name {
-                    display: block;
-                    margin: 0.25em 0 0 0;
-                }
+                line-height: .9;
             }
             .description {
                 font-size: 2em;
@@ -40,15 +41,15 @@
         }
 
         .advantages-list {
-            left: 35em;
-            // width: 73em;
             width: auto;
-            top: -7.3em;
-            display: flex;
+            top: auto;
+            display: inline-flex;
             align-items: stretch;
+            flex: 1;
             .advantage {
                 display: inline-block;
-                width: 24em;
+                width: 33.3333%;
+                padding: 0 2em;
                 .icon {
                     text-align: center;
                     .icon-img {
@@ -61,14 +62,15 @@
                     top: 1.25em;
                     text-align: center;
                     line-height: 1.225;
+                    @media screen and (max-width:1440px) {
+                        font-size: 2.4em;
+                    }
                     span.strong {
                     }
                 }
             }
             .advantage.advantage--teacher {
-                // margin: 0 10.7em 0 0;
-                margin: 0 5.5em 0 0;
-
+                margin: 0;
                 .icon {
                     .icon-img {
                     }
@@ -80,26 +82,24 @@
             }
 
             .advantage.advantage--tech {
-                // margin: 0 8.5em 0 0;
-                margin: 0 5.5em 0 0;
+                margin: 0;
                 .icon {
                     .icon-img {
                     }
                 }
                 .description {
-                    // left: -0.5em;
                     span.strong {
                     }
                 }
             }
 
             .advantage.advantage--cert {
+                margin: 0;
                 .icon {
                     .icon-img {
                     }
                 }
                 .description {
-                    // left: -0.5em;
                     span.strong {
                     }
                 }
@@ -557,6 +557,8 @@
                 flex-direction: column;
                 width: 35em;
                 text-align: center;
+                text-decoration: none;
+                color: $text;
                 .test-img {
                     margin: 0 0 1.2em 0;
                     display: block;
@@ -627,7 +629,7 @@
                         padding: 0.9em 1em;
                         border: none;
                         background-color: #fff;
-                        color: #f4f4f4;
+                        color: $gray;
                     }
                 }
             }

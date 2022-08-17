@@ -20,7 +20,10 @@ body {
     font-size: 0.5215vw;
     color: $text;
 }
-
+@media screen and (max-width: 1440px) {
+    body {
+    }
+}
 .strong {
     font-weight: bold;
     display: inline-block;

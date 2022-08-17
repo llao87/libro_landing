@@ -121,15 +121,15 @@
         .title Образцы типовых тестов
 
         .tests
-            .test
+            a.test(href="../../img/test-patent.pdf")
                 img.test-img(src="../../img/demo-test-1.png")
                 .caption Для получения разрешения на 
                     span.strong работу или патента (уровень 1)
-            .test
+            a.test(href="../../img/test-rvp.pdf")
                 img.test-img(src="../../img/demo-test-1.png")
                 .caption Для получения разрешения на 
                     span.strong временное проживание (уровень 2)
-            .test
+            a.test(href="../../img/test-vnzh.pdf")
                 img.test-img(src="../../img/demo-test-1.png")
                 .caption Для получения разрешения на 
                     span.strong вид на жительство (уровень 3)
@@ -146,10 +146,10 @@
 
             label.field
                 span.field-label Ваше имя
-                    input(type="text" placeholder="Введите имя")
+                    input.js-masked-name(type="text" placeholder="Введите имя")
 
             label.field
                 span.field-label Номер телефона
-                    input(type="text" placeholder="+7...")
-
+                    input.js-masked-phone(type="text" placeholder="+7...")
+                    
             input.btn.btn-green.submit(type="submit" value="Записаться")

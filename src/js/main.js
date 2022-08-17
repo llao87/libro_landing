@@ -27,10 +27,28 @@ jQuery(function () {
 
         jQuery("body,html").animate(
             {
-                scrollTop: jQuery(clickTarget).offset().top
+                scrollTop: jQuery(clickTarget).offset().top,
             },
             800
         );
         return false;
     });
+
+    // маска телефона в форме
+    jQuery(".js-masked-phone").mask(
+        "+7 (999) 999-9999", 
+        {
+            autoclear: true
+        }
+    );
+
+    // маска для поля "ваше имя"
+    jQuery(".js-masked-name").on('focus', function(e) {
+        if (jQuery(this).val() == '')
+            jQuery(this).attr('placeholder', '');
+    })
+
+    jQuery(".js-masked-name").on('focusout', function(e) {
+        jQuery(this).attr('placeholder', 'ваше имя');
+    })
 });
