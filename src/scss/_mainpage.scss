@@ -1,10 +1,25 @@
 .advantages {
     height: 57.2em;
     width: 100%;
-    background-image: url(../img/bg-advantages.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: $text;
+    // background-image: url(../img/bg-advantages.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        background-image: url(../img/checklist.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 37em;
+        height: 37em;
+        top: 11em;
+        left: 10em;
+        z-index: 1;
+    }
     .container {
         width: 155em;
         margin: 0 auto;
@@ -502,6 +517,10 @@
                         font-weight: normal;
                         line-height: 1.15;
                         margin: 0 0 1.85em 0;
+
+                        @media screen and (max-width: 1440px) {
+                            font-size: 2.4em;
+                        }
                     }
                 }
                 .col-left {
@@ -570,6 +589,10 @@
                 .caption {
                     font-size: 2em;
                     text-align: center;
+
+                    @media screen and (max-width: 1440px) {
+                        font-size: 2.2em;
+                    }
                 }
             }
         }
@@ -622,6 +645,10 @@
                     font-size: 2em;
                     margin: 0 0 0 0.9em;
                     color: $accent;
+
+                    @media screen and (max-width: 1440px) {
+                        font-size: 2.4em;
+                    }
                     input {
                         width: 100%;
                         font-size: 0.9em;

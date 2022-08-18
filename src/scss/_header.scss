@@ -8,6 +8,15 @@ header {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0 auto;
+            padding: 0 4em;
+        }
         .logo {
             width: 15.8em;
             left: 34.1em;
@@ -16,13 +25,21 @@ header {
             text-decoration: none;
             color: inherit;
 
-            @media screen and (max-width:1440px) {
+            @media screen and (max-width: 1440px) {
                 width: 25.8em;
                 left: 33.1em;
+            }
+            @media screen and (max-width: 768px) {
+                left: auto;
+                overflow: hidden;
             }
             img {
                 width: 100%;
                 height: auto;
+
+                @media screen and (max-width: 768px) {
+                    margin-left: -2.5em;
+                }
             }
         }
         .main-nav {
@@ -30,6 +47,9 @@ header {
             align-items: center;
             left: 42.3em;
             top: auto;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
             .nav-link {
                 text-decoration: none;
                 color: inherit;
@@ -56,6 +76,9 @@ header {
 
             @media screen and (max-width: 1440px) {
                 width: 25em;
+            }
+            @media screen and (max-width: 768px) {
+                left: 20em;
             }
             .phone {
                 width: 100%;
@@ -91,6 +114,12 @@ header {
     .promo {
         // height: 62.4em;
         height: 61em;
+        @media screen and (max-width: 768px) {
+            max-width: 480px;
+            width: 100%;
+            padding: 3em 4em;
+            margin: 0 auto;
+        }
         .offer {
             font-size: 8.6em;
             font-weight: 900;
@@ -100,6 +129,14 @@ header {
             width: 7.4em;
             line-height: 0.95;
             color: $accent;
+            @media screen and (max-width: 768px) {
+                left: auto;
+                font-size: 6em;
+                position: static;
+                margin-bottom: 0.6em;
+                top: 0;
+                width: 50%;
+            }
         }
         .suboffer {
             font-size: 2.8em;
@@ -109,6 +146,12 @@ header {
             top: 3.3em;
             width: 19.5em;
             line-height: 1.125;
+            @media screen and (max-width: 768px) {
+                left: auto;
+                font-size: 3.6em;
+                position: static;
+                width: 55%;
+            }
         }
 
         .btn {
@@ -120,11 +163,19 @@ header {
             top: 8em;
             left: 17.6em;
             border-radius: 10em;
-            
-            @media screen and (max-width:1440px) {
+
+            @media screen and (max-width: 1440px) {
                 font-size: 2.4em;
                 top: 6em;
                 left: 14.8em;
+            }
+            @media screen and (max-width: 768px) {
+                position: relative;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 1.5em auto;
+                font-size: 2.8em;
             }
         }
         .btn--green {

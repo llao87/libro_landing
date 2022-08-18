@@ -11,6 +11,9 @@ footer {
             width: 28em;
             padding: 0.5em 0 0 0;
             flex: none;
+            @media screen and (max-width:1440px) {
+                width: 35em;
+            }
 
             .logo {
                 margin: -1em 0 1.4em -1.4em;
@@ -23,6 +26,9 @@ footer {
                     width: 100%;
                     height: auto;
                 }
+                @media screen and (max-width:1440px) {
+                    margin-bottom: 3.9em;
+                }
             }
 
             .work-time {
@@ -32,6 +38,9 @@ footer {
                 padding: 0 2.4em 0 0;
                 font-weight: 300;
                 margin: 0 0 1.4em 0;
+                @media screen and (max-width:1440px) {
+                    font-size: 2.4em;
+                }
             }
             .contacts {
                 // display: flex;
@@ -67,11 +76,18 @@ footer {
             justify-content: space-between;
             flex-wrap: wrap;
             flex: none;
+            @media screen and (max-width:1440px) {
+                width: 70em;
+            }
             .address {
                 width: 50%;
                 font-size: 2em;
                 color: #fff;
                 padding: 0 0 2.4em 0.3em;
+
+                @media screen and (max-width:1440px) {
+                    font-size: 2.4em;
+                }
 
                 &:nth-child(2) {
                     padding-left: 4em;
