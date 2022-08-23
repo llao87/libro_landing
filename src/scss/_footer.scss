@@ -1,5 +1,8 @@
 footer {
     background-color: $text;
+    @media screen and (max-width: 768px) {
+        font-size: 1.4em;
+    }
     .container {
         max-width: 130em;
         margin: 0 auto;
@@ -7,12 +10,29 @@ footer {
         display: flex;
         align-items: stretch;
         justify-content: space-between;
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+        @media screen and (max-width: 580px) {
+            font-size: 1.4em;
+        }
+        @media screen and (max-width: 420px) {
+            font-size: 1.6em;
+        }
         .logo-column {
             width: 28em;
             padding: 0.5em 0 0 0;
             flex: none;
-            @media screen and (max-width:1440px) {
+            @media screen and (max-width: 1440px) {
                 width: 35em;
+            }
+            @media screen and (max-width: 768px) {
+                width: 50%;
+                margin: 0 auto 10em;
+                text-align: center;
+            }
+            @media screen and (max-width: 580px) {
+                width: 90%;
             }
 
             .logo {
@@ -26,8 +46,12 @@ footer {
                     width: 100%;
                     height: auto;
                 }
-                @media screen and (max-width:1440px) {
+                @media screen and (max-width: 1440px) {
                     margin-bottom: 3.9em;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 1.4em;
+                    margin: 0 0 1em 0;
                 }
             }
 
@@ -38,8 +62,12 @@ footer {
                 padding: 0 2.4em 0 0;
                 font-weight: 300;
                 margin: 0 0 1.4em 0;
-                @media screen and (max-width:1440px) {
+                @media screen and (max-width: 1440px) {
                     font-size: 2.4em;
+                }
+                @media screen and (max-width: 768px) {
+                    padding: 0;
+                    font-size: 2.8em;
                 }
             }
             .contacts {
@@ -53,6 +81,9 @@ footer {
                 align-items: flex-start;
                 flex-direction: column;
                 flex: 1;
+                @media screen and (max-width: 768px) {
+                    font-size: 1.4em;
+                }
                 .phone {
                     display: block;
                     width: 100%;
@@ -76,8 +107,16 @@ footer {
             justify-content: space-between;
             flex-wrap: wrap;
             flex: none;
-            @media screen and (max-width:1440px) {
+            @media screen and (max-width: 1440px) {
                 width: 70em;
+            }
+            @media screen and (max-width: 768px) {
+                width: 60%;
+                margin: 0 auto;
+                font-size: 1.16667em;
+            }
+            @media screen and (max-width: 580px) {
+                width: 90%;
             }
             .address {
                 width: 50%;
@@ -85,8 +124,14 @@ footer {
                 color: #fff;
                 padding: 0 0 2.4em 0.3em;
 
-                @media screen and (max-width:1440px) {
+                @media screen and (max-width: 1440px) {
                     font-size: 2.4em;
+                }
+                @media screen and (max-width: 768px) {
+                    width: 50%;
+                    padding: 0 !important;
+                    margin: 0 0 2em 0;
+                    text-align: center;
                 }
 
                 &:nth-child(2) {
@@ -105,7 +150,6 @@ footer {
                 }
             }
         }
-        
     }
 
     .to-top {
@@ -122,11 +166,16 @@ footer {
         z-index: 100;
         padding: 2.1em 1em;
         cursor: pointer;
-        transition: all .3s linear;
+        transition: all 0.3s linear;
+
+        @media screen and (max-width: 768px) {
+            display: none !important;
+        }
 
         &:hover {
             background-color: #1585b5;
         }
     }
-    .js-to-top {}
+    .js-to-top {
+    }
 }
